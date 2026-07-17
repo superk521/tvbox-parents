@@ -2,7 +2,7 @@
   "storeHouse": [
     {
       "sourceName": "聚合仓库-线路1",
-      "sourceUrl": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/line.json"
+      "sourceUrl": "http://www.饭太硬.cc/tv"
     },
     {
       "sourceName": "聚合仓库-线路2",
