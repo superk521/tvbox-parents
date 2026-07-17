@@ -1,10 +1,8 @@
 {
-  "storeHouse": [
+  "urls": [
     {
-      "sourceName": "饭太硬",
-      "sourceUrl": "https://qist.wyfc.qzz.io/fty.json"
-    },
-    {
-    
+      "url": "https://qist.wyfc.qzz.io/fty.json",
+      "name": "饭太硬"
+    }
   ]
 }
