@@ -1,3 +1,5 @@
 {
-  "url": "http://www.饭太硬.cc/tv"
+  "urls": [
+    {"url": "https://qist.wyfc.qzz.io/fty.json", "name": "饭太硬"}
+  ]
 }
