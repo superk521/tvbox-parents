@@ -1,0 +1,20 @@
+{
+  "storeHouse": [
+    {
+      "sourceName": "聚合仓库-线路1",
+      "sourceUrl": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/line.json"
+    },
+    {
+      "sourceName": "聚合仓库-线路2",
+      "sourceUrl": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/line2.json"
+    },
+    {
+      "sourceName": "聚合仓库-线路3",
+      "sourceUrl": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/line3.json"
+    }
+  ],
+  "sites": [],
+  "lives": [],
+  "parses": [],
+  "flags": []
+}
