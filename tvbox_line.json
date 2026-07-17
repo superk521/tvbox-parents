@@ -1,20 +1,544 @@
 {
-  "storeHouse": [
+  "spider": "https://fm.t4tv.hz.cz/jar/custom_spider.jar;md5;6bf74e9b02f310ddcab9c460b7e0983c",
+  "wallpaper": "http://æ¥îãçº­?top/å¨£è¾«å£æ¾¹ä½ºç/api.php",
+  "sites": [
     {
-      "sourceName": "聚合仓库-线路1",
-      "sourceUrl": "http://www.饭太硬.cc/tv"
+      "key": "éåç°µ",
+      "name": "éåç°µ",
+      "type": 3,
+      "api": "csp_Market",
+      "searchable": 0,
+      "changeable": 0,
+      "ext": "https://fm.t4tv.hz.cz/json/market.json"
     },
     {
-      "sourceName": "聚合仓库-线路2",
-      "sourceUrl": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/line2.json"
+      "key": "å¨ã¥å",
+      "name": "å¨ã¥å",
+      "type": 3,
+      "api": "csp_NiNi",
+      "searchable": 1,
+      "changeable": 1
     },
     {
-      "sourceName": "聚合仓库-线路3",
-      "sourceUrl": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/line3.json"
+      "key": "éç¸æ§¦",
+      "name": "éç¸æ§¦",
+      "type": 3,
+      "api": "csp_Star",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "éâä¼",
+      "name": "éâä¼",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "token": "è¤°è¾«î»æ¾¶âç¬ç»î¿ç«´",
+        "filter": "https://fm.t4tv.hz.cz/json/wogg.json"
+      }
+    },
+    {
+      "key": "é©?9",
+      "name": "é©?9",
+      "type": 3,
+      "api": "csp_Pan99",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": "è¤°è¾«î»æ¾¶âç¬ç»î¿ç«´"
+    },
+    {
+      "key": "ç©ãé¿",
+      "name": "ç©ãé¿",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "https://fm.t4tv.hz.cz/json/jianpian.json"
+    },
+    {
+      "key": "éã¦æ±",
+      "name": "éã¦æ±",
+      "type": 3,
+      "api": "csp_XPathMacFilter",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "https://fm.t4tv.hz.cz/json/duboku.json"
+    },
+    {
+      "key": "haiwaikan",
+      "name": "å¨´å³°î»éª?,
+      "type": 1,
+      "api": "https://haiwaikan.com/api.php/provide/vod",
+      "searchable": 1,
+      "changeable": 1,
+      "categories": [
+        "éã¦æ¹°éã¦æ",
+        "é¥æéªéã¦æ",
+        "å¨Ñç·¨éã¦æ",
+        "é¥æéªé?,
+        "éâå¢½",
+        "éã¥å¢½",
+        "éæ¿å¢½",
+        "å¨æ¿å¢½",
+        "å¨îå¢½",
+        "å¨Ñç·¨é?,
+        "éã§æ¾é¢éå¥",
+        "éâæµç¼è°å£",
+        "é¥æéªç¼è°å£",
+        "éã¦æ¹°ç¼è°å£",
+        "å¨Ñç·¨ç¼è°å£",
+        "éææ«é?,
+        "éÑåé?,
+        "éã¤ç¶é?,
+        "éå±¾â¬Ñå¢",
+        "é æ»å¢½é?,
+        "æ¿å§å¤é?,
+        "é­æ­â¬æ «å¢",
+        "é®îæé?,
+        "é¯å©å¸é?,
+        "é´æ¨¹ç°¤é?,
+        "å§å²å¶é?,
+        "éé¹æ¯¦é?,
+        "éè¾¨åé?,
+        "éîå§é?,
+        "ç»æå¤é?,
+        "ç»¾îç¶é?,
+        "ç¼å¿åé?
+      ]
+    },
+    {
+      "key": "996è¤°éæ«",
+      "name": "996è¤°éæ«",
+      "type": 3,
+      "api": "csp_Cs1369",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "é­îå¦µ",
+      "name": "é­îå¦µ",
+      "type": 3,
+      "api": "csp_Duanju",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "çåæ",
+      "name": "çåæ",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "changeable": 1,
+      "ext": "https://fm.t4tv.hz.cz/json/douban.json"
+    },
+    {
+      "key": "é?V",
+      "name": "é?V",
+      "type": 3,
+      "api": "csp_Xb6v",
+      "searchable": 1,
+      "changeable": 0,
+      "timeout": 60
+    },
+    {
+      "key": "éªå¬¬æ",
+      "name": "éªå¬¬æ",
+      "type": 3,
+      "api": "csp_Kanqiu",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
+    {
+      "key": "éæ®â·",
+      "name": "éæ®â·",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "ç»±ã å¹",
+      "name": "ç»±ã å¹ ",
+      "type": 1,
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "è¹î¢ç«¼",
+      "name": "è¹î¢ç«¼",
+      "type": 1,
+      "api": "https://api.kuaifan.tv/api.php/provide/vod",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "é²å¿ç",
+      "name": "é²å¿ç",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "éç²å",
+      "name": "éç²å",
+      "type": 1,
+      "api": "http://cj.ffzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "å¨æå§³",
+      "name": "å¨æå§³",
+      "type": 3,
+      "api": "csp_Ying",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "å®¸æï¼",
+      "name": "å®¸æï¼",
+      "type": 3,
+      "api": "csp_Dm84",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "é£æ®æ«",
+      "name": "é£æ®æ«",
+      "type": 3,
+      "api": "csp_Ysj",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "éæ¿æ¡",
+      "name": "éæ¿æ¡",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "ext": {
+        "json": "https://fm.t4tv.hz.cz/json/bili.json",
+        "type": "ç¯æîªé·?æ¾¶îç¬é·?éªå®æºé¸?å©æ¿æ±æµ¼?,
+        "cookie": ""
+      }
+    },
+    {
+      "key": "bili_open",
+      "name": "éæ¿æ¡ç¨?,
+      "type": 3,
+      "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodOpen/main/open/bili_open.js",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "categories": "é­îå¢½#å¨æ¬æ´éã§æ¾#å¨æ¬æ´ç»è¯ç§º#å¨æ¬æ´",
+        "cookie": ""
+      }
+    },
+    {
+      "key": "é°é£å«",
+      "name": "é°é£å«",
+      "type": 3,
+      "api": "csp_Kugou",
+      "searchable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "éîæ¹´",
+      "name": "éîæ¹´",
+      "type": 3,
+      "api": "csp_Local",
+      "searchable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "AList",
+      "name": "AList",
+      "type": 3,
+      "api": "csp_AList",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": "https://fm.t4tv.hz.cz/json/alist.json"
+    },
+    {
+      "key": "WebDAV",
+      "name": "WebDAV",
+      "type": 3,
+      "api": "csp_WebDAV",
+      "searchable": 0,
+      "changeable": 0,
+      "ext": "https://fm.t4tv.hz.cz/json/webdav.json"
+    },
+    {
+      "key": "JustLive",
+      "name": "JustLive",
+      "type": 3,
+      "api": "csp_JustLive",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "æ¶å¨î",
+      "name": "æ¶å¨î",
+      "type": 3,
+      "api": "csp_Dovx",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "éæ´æ³",
+      "name": "éæ´æ³",
+      "type": 3,
+      "api": "csp_YiSo",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "éåæ³",
+      "name": "éåæ³",
+      "type": 3,
+      "api": "csp_UpYun",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "é©ãæ³",
+      "name": "é©ãæ³",
+      "type": 3,
+      "api": "csp_PanSou",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "ç»±æ¬îé¼?,
+      "name": "ç»±æ¬îé¼?,
+      "type": 3,
+      "api": "csp_XiaoZhiTiao",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "é©ãæ³ç»±?,
+      "name": "é©ãæ³ç»±?,
+      "type": 3,
+      "api": "csp_PanSearch",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "éµæç¡£å©§?,
+      "name": "éµæç¡£å©§?,
+      "type": 3,
+      "api": "csp_Zhaozy",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": "è¤°è¾«î»æ¾¶âç¬ç»î¿ç«´$$$test2$$$test2"
+    },
+    {
+      "key": "push_agent",
+      "name": "éºã©â¬?,
+      "type": 3,
+      "api": "csp_Push",
+      "searchable": 0,
+      "changeable": 0,
+      "timeout": 60
     }
   ],
-  "sites": [],
-  "lives": [],
-  "parses": [],
-  "flags": []
+  "doh": [
+    {
+      "name": "Google",
+      "url": "https://dns.google/dns-query",
+      "ips": [
+        "8.8.4.4",
+        "8.8.8.8"
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query",
+      "ips": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ]
+    },
+    {
+      "name": "AdGuard",
+      "url": "https://dns.adguard.com/dns-query",
+      "ips": [
+        "94.140.14.140",
+        "94.140.14.141"
+      ]
+    },
+    {
+      "name": "DNSWatch",
+      "url": "https://resolver2.dns.watch/dns-query",
+      "ips": [
+        "84.200.69.80",
+        "84.200.70.40"
+      ]
+    },
+    {
+      "name": "Quad9",
+      "url": "https://dns.quad9.net/dns-quer",
+      "ips": [
+        "9.9.9.9",
+        "149.112.112.112"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "name": "proxy",
+      "hosts": [
+        "raw.githubusercontent.com",
+        "googlevideo.com",
+        "cdn.v82u1l.com",
+        "cdn.iz8qkg.com",
+        "cdn.kin6c1.com",
+        "c.biggggg.com",
+        "c.olddddd.com",
+        "haiwaikan.com",
+        "www.histar.tv",
+        "youtube.com",
+        "uhibo.com",
+        ".*boku.*",
+        ".*nivod.*",
+        ".*ulivetv.*"
+      ]
+    },
+    {
+      "name": "å¨´å³°î»éª?,
+      "hosts": [
+        "haiwaikan"
+      ],
+      "regex": [
+        "10.0099",
+        "10.3333",
+        "16.0599",
+        "8.1748",
+        "12.33",
+        "10.85"
+      ]
+    },
+    {
+      "name": "ç»±ã å¹",
+      "hosts": [
+        "suonizy"
+      ],
+      "regex": [
+        "15.1666",
+        "15.2666"
+      ]
+    },
+    {
+      "name": "éæ®â·",
+      "hosts": [
+        "bfzy"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "éç¸æ§¦",
+      "hosts": [
+        "aws.ulivetv.net"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "é²å¿ç",
+      "hosts": [
+        "vip.lz",
+        "hd.lz",
+        "v.cdnlz"
+      ],
+      "regex": [
+        "18.5333"
+      ]
+    },
+    {
+      "name": "éç²å",
+      "hosts": [
+        "vip.ffzy",
+        "hd.ffzy"
+      ],
+      "regex": [
+        "25.0666",
+        "25.08"
+      ]
+    },
+    {
+      "name": "éî¢åé¡å®å¸°",
+      "hosts": [
+        "huoshan.com"
+      ],
+      "regex": [
+        "item_id="
+      ]
+    },
+    {
+      "name": "é¶æ ­ç¶é¡å®å¸°",
+      "hosts": [
+        "douyin.com"
+      ],
+      "regex": [
+        "is_play_url="
+      ]
+    },
+    {
+      "name": "æåç¯é¡å®å¸°",
+      "hosts": [
+        "toutiaovod.com"
+      ],
+      "regex": [
+        "video/tos/cn"
+      ]
+    },
+    {
+      "name": "æ¶å©æé¡å®å¸°",
+      "hosts": [
+        "api.52wyb.com"
+      ],
+      "regex": [
+        "m3u8?pt=m3u8"
+      ]
+    },
+    {
+      "name": "æ¾¶æ»ç«¶",
+      "hosts": [
+        "yeslivetv.com"
+      ],
+      "script": [
+        "document.getElementsByClassName('vjs-big-play-button')[0].click()"
+      ]
+    },
+    {
+      "name": "å§£æ¶¢î¿",
+      "hosts": [
+        "www.maolvys.com"
+      ],
+      "script": [
+        "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
+      ]
+    }
+  ],
+  "ads": [
+    "mozai.4gtv.tv"
+  ]
 }
